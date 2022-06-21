@@ -1,0 +1,88 @@
+:root {
+  --very-light-blue: #0FC2C0;
+  --very-black: #012828;
+  --green-blue: #008F8C;
+}
+html{
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+ font-family: 'Quicksand', sans-serif;
+ margin: 0;
+ padding:0; 
+ box-sizing: border-box;
+}
+.waves{
+  width: 100%;
+  height: 10vh;
+}
+
+.navigation {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 24px 24px 0;
+  width: 50%;
+  padding-top: 16px;
+}
+
+.nav-item {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  font-family: var(--very-black);
+  height: 30px;
+  justify-content: center;
+  width: 33%;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid var(--very-light-blue);
+  border-radius: 0;
+}
+
+.presentation{
+text-align: center;
+}
+
+.header-img {
+  background: center / contain no-repeat url(./assets/20220413_182357.jpg);
+  border-radius: 50%;
+  box-shadow: 8px 16px 32px 0px var(--very-black);
+  height: 280px;
+  margin: 40px 0;
+  width: 280px;
+}
+.typing{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.typing__name {
+  color: var(--very-light-blue);
+  width: 28ch;
+  animation: typing 3s steps(28), effect .5s step-end infinite alternate;
+  white-space: nowrap;
+  border-right: 4xp solid;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from{
+    width:0;
+  }
+}
+
+@keyframes effect {
+  50%{
+    border-color:transparent
+  }
+}
